@@ -1,0 +1,137 @@
+body{
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to left bottom, #483D8B, black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	color: white;
+	font-family: calibri;
+}
+.ramka{
+	width: 66%;
+	height: 66%;
+	background: rgba(0, 0, 0, 0.75);
+	background: linear-gradient(to left bottom, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.25));
+	border-radius: 20px;
+	position: relative;
+	backdrop-filter: blur(3px);
+	padding: 32px 92px;
+
+}
+main {
+	display:flex;
+}
+
+h1{
+	padding-bottom: 12px;
+	font-size: 55px;
+	
+}
+p{
+	font-size:29px;
+	font-weight: 400;
+}
+.obrazek {
+	position: absolute;
+
+}
+.obrazek--snieg {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	animation: dol 7s linear infinite;
+}
+@keyframes dol{
+	from{top:-20%}
+	to{top: 100%}
+}
+.snieg2 {
+	position: absolute;
+	top: -50%;
+	left: 60%;
+	animation: dol2 4s linear infinite;
+	
+}
+@keyframes dol2{
+	from{top:-50%}
+	to{top: 100%}
+}
+.snieg3 {
+	position: absolute;
+	top: -60%;
+	left: 40%;
+	animation: dol3 6s linear infinite;
+	
+}
+@keyframes dol3{
+	from{top:-60%}
+	to{top: 100%}
+}
+.snieg4 {
+	position: absolute;
+	top: -90%;
+	left: 50%;
+	animation: dol4 10s linear infinite;
+	
+}
+@keyframes dol4{
+	from{top:-90%}
+	to{top: 100%}
+}
+.snieg5 {
+	position: absolute;
+	top: -90%;
+	left: 30%;
+	animation: dol5 8s linear infinite;
+	
+}
+@keyframes dol5{
+	from{top:-20%}
+	to{top: 100%}
+}
+.snieg6 {
+	position: absolute;
+	top: -30%;
+	left: 75%;
+	animation: dol5 8s linear infinite;
+	
+}
+@keyframes dol6{
+	from{top:-30%}
+	to{top: 100%}
+}
+.obrazek--choinka {
+	left: 0;
+	top: 50%;
+	opacity: 40%;
+	transform: translate(-30%, -60%) rotate(-20deg);
+	
+}
+.obrazek--mikolaj {
+	left: 17%;
+	top: 50%;
+	opacity: 40%;
+	transform: translate(130%, -60%) rotate(20deg);
+	
+}
+.przycisk{
+	transform: translateX(150%);
+	width: 20%;
+	height: 40%;
+	margin: 25px;
+	padding: 12px;
+	font-size: 32px;
+	font-weight: 700;
+	color: black;
+	background: #7B68EE;
+	cursor: pointer;
+	border-radius: 8px;
+	border: 2px solid rgba(33, 68, 72, 0.59);
+	text-align: center;
+}
+.przycisk:hover {
+    background: #FF9999;
+}
+
